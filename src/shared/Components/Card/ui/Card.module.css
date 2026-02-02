@@ -1,0 +1,30 @@
+.card {
+  width: 100%;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.greenCard {
+  background-color: #ddf5e7;
+  border: 2px solid #16a086;
+}
+
+.yellowCard {
+  background-color: #fef0cc;
+  border: 2px solid #f8b200;
+}
+
+.violetCard {
+  background-color: #edf2fe;
+  border: 2px solid #4d83fa;
+}
+
+.turqCard {
+  background-color: #dbf4f7;
+  border: 2px solid #16a086;
+}
+
+.cardIconWrapper {
+  width: 48px;
+  height: 48px;
+}

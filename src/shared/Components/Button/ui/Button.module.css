@@ -1,0 +1,15 @@
+.btn {
+  width: 100%;
+  display: inline-flex;
+  background-color: #12826e;
+  border: none;
+  padding: 14px 40px;
+  text-align: center;
+  &:hover {
+    border: none;
+  }
+  &:active {
+    border: none;
+    font-size: 16px;
+  }
+}

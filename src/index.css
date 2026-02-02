@@ -1,0 +1,8 @@
+body {
+  font-family: "Inter Variable", sans-serif;
+  line-height: normal;
+  color: #000;
+  overflow-wrap: anywhere;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
