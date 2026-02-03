@@ -1,6 +1,20 @@
-import React from "react";
+import clsx from "clsx";
+import type { HTMLAttributes } from "react";
+
 import styles from "./ContainerFlex.module.css";
 
-export const ContainerFlex = ({ children }: { children: React.ReactNode }) => {
-  return <div className={styles.containerWrapper}>{children}</div>;
+interface ContainerFlexProps extends HTMLAttributes<HTMLDivElement> {
+  children: React.ReactNode;
+}
+
+export const ContainerFlex = ({
+  children,
+  className,
+  ...props
+}: ContainerFlexProps) => {
+  return (
+    <div className={clsx(styles.containerWrapper, className)} {...props}>
+      {children}
+    </div>
+  );
 };

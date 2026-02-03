@@ -1,0 +1,29 @@
+.backpackImg {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  grid-column-start: 2;
+  grid-column-end: span 5;
+  max-width: 488px;
+  margin: 0 auto;
+  @media (max-width: 1216px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.backpackInfo {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  grid-column-end: span 5;
+}
+.backpackUl {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.backpackUl li:before {
+  top: 5px;
+}

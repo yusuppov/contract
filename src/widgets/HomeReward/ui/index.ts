@@ -1,1 +1,1 @@
-export * from './HomeReward'
+export * from "./HomeReward";
