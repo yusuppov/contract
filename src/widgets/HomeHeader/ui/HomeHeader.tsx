@@ -37,12 +37,14 @@ export const HomeHeader = () => {
           <Button text="Записаться" />
         </div>
       </ContainerFlex>
-      <div className={styles.cardsBox}>
-        <Card color="violet" text="Как стать контрактником" />
-        <Card color="turq" text="Как стать контрактником" />
-        <Card color="yellow" text="Как стать контрактником" />
-        <Card color="green" text="Как стать контрактником" />
-      </div>
+      <ContainerFlex>
+        <div className={styles.cardsBox}>
+          <Card color="violet" text="Как стать контрактником" />
+          <Card color="turq" text="Как стать контрактником" />
+          <Card color="yellow" text="Как стать контрактником" />
+          <Card color="green" text="Как стать контрактником" />
+        </div>
+      </ContainerFlex>
     </div>
   );
 };
