@@ -5,7 +5,6 @@ import { Text } from "../../Text";
 
 interface ButtonInterface extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
-  
 }
 export const Button = ({ text, className }: ButtonInterface) => {
   return (
