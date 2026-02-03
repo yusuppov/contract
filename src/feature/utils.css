@@ -27,3 +27,7 @@
   background-color: #52a696;
   border-radius: 1000px;
 }
+
+.rotate { 
+    transform: rotate(270deg) !important;
+}
