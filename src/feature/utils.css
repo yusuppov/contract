@@ -96,3 +96,7 @@
 .reverseFlexUtil {
   flex-direction: column !important;
 }
+
+.mAuto {
+  margin: 0 auto;
+}
