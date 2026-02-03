@@ -6,10 +6,13 @@
 .leftContainer {
   display: flex;
   flex-direction: column;
+  grid-column-start: 2;
   grid-column-end: span 6;
   justify-content: center;
-  h1 {
-    text-align: center;
+  @media (max-width: 1216px) {
+    h1 {
+      text-align: center;
+    }
   }
 }
 
@@ -28,6 +31,8 @@
   margin-top: 48px;
   border-bottom: 2px solid #16a086;
   padding-bottom: 72px;
+  margin-bottom: 72px;
+  grid-column: 2/ -2;
   @media (max-width: 1216px) {
     flex-direction: column;
   }

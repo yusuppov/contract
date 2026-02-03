@@ -1,8 +1,4 @@
 .homePage {
-  /* display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 32px;
-  grid-template-rows: auto; */
   width: 100%;
   padding: 100px 0;
   color: #0b1f33;
@@ -12,6 +8,9 @@
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  gap: 78px;
   grid-column: 2 / -2;
   max-width: 1216px;
 }

@@ -13,10 +13,12 @@ export const InfoCard: FC<InfoCardInterface> = ({
   title,
   mainText,
   btnText,
+  className,
+  children,
   //   circleColor
 }) => {
   return (
-    <div className={clsx(styles.card)}>
+    <div className={clsx(className, styles.card)}>
       <div className={clsx(styles.cardWrapper)}>
         <div className={clsx(styles.cardHeader)}>
           {icon && <div className={styles.iconStyles}>{icon}</div>}
@@ -28,8 +30,9 @@ export const InfoCard: FC<InfoCardInterface> = ({
           <Text as="p" variant="h4">
             {mainText}
           </Text>
+          {children}
         </div>
-        {btnText && <Button text="Подать заявление" />}
+        {btnText && <Button text={btnText} />}
       </div>
     </div>
   );
