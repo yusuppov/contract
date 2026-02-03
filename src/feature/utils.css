@@ -5,7 +5,7 @@
   display: block;
   position: relative;
   background-color: #12826e;
-  border-radius: 1000px;
+  border-radius: 50%;
 }
 
 .turqCircle:before {
@@ -13,9 +13,18 @@
   height: 24px;
   content: "";
   display: block;
-  position: relative;
+  position: absolute;
+  left: 26px;
+  top: 28px;
   background-color: #52a696;
   border-radius: 1000px;
+    @media (max-width: 1216px) { 
+    left: 24px;
+  }
+}
+
+.smallTurqCircle { 
+  transform: translateX(20px);
 }
 
 .smallTurqCircle:before {
@@ -23,9 +32,21 @@
   height: 8px;
   content: "";
   display: block;
-  position: relative;
+  position: absolute;
+  left: -20px;
+  top: 8px;
   background-color: #52a696;
   border-radius: 1000px;
+}
+
+.textAlign { 
+  text-align: center;
+}
+
+
+
+.w227 { 
+  max-width: 227px;
 }
 
 .rotate {
@@ -47,3 +68,28 @@
 .mt72 {
   margin-top: 72px;
 }
+
+.pl72 { 
+  padding-left: 72px !important;
+}
+  @media (max-width: 1216px) {
+    .pl72 { 
+      padding-left: 24px !important;
+    }
+    .pl72 h3 { 
+      margin-left: 40px;
+    }
+  }
+
+.ml20 { 
+  margin-left: 20px;
+}
+
+.mb40 { 
+  margin-bottom: 40px;
+}
+
+.pl45 { 
+  padding-left: 45px !important;
+}
+
