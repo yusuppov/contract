@@ -1,0 +1,34 @@
+.homeHeaderWrapper {
+  width: 100%;
+  grid-column: 2/-2;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  grid-column-end: span 6;
+  justify-content: center;
+  h1 {
+    text-align: center;
+  }
+}
+
+.rightContainer {
+  grid-column-end: span 4;
+  max-width: 372px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.cardsBox {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 48px;
+  border-bottom: 2px solid #16a086;
+  padding-bottom: 72px;
+  @media (max-width: 1216px) {
+    flex-direction: column;
+  }
+}

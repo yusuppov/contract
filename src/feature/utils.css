@@ -28,6 +28,14 @@
   border-radius: 1000px;
 }
 
-.rotate { 
-    transform: rotate(270deg) !important;
+.rotate {
+  transform: rotate(270deg) !important;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mt24 {
+  margin-top: 24px;
 }

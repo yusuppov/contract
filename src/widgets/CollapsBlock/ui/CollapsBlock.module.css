@@ -1,26 +1,25 @@
-.collapsBlock { 
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    border: 2px solid #16a086;
-    border-radius: 12px;
-    padding: 24px 24px 16px 24px;
+.collapsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 2px solid #16a086;
+  border-radius: 12px;
+  padding: 24px 24px 16px 24px;
 }
 
-.collapsBlockTitle { 
-    display: flex;
-    justify-content: space-between;
-    user-select: none;
-    span { 
-        background-color: #DDF5E7;
-        color: #16a086;
-        border-radius: 100%;
-        width: 24px;
-        height: 24px;
-        font-weight: 500;
-        transform: rotate(90deg);
-        padding-left: 7px;
-        padding-top: 3px; 
-        
-    }
+.collapsBlockTitle {
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  span {
+    background-color: #ddf5e7;
+    color: #16a086;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    font-weight: 500;
+    transform: rotate(90deg);
+    padding-left: 7px;
+    padding-top: 3px;
+  }
 }
