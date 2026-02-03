@@ -1,1 +1,1 @@
-export * from './CollapsBlock'
+export * from "./CollapsBlock";

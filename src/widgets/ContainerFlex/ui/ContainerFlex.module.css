@@ -1,4 +1,9 @@
 .containerWrapper {
-  width: 100%;
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 32px;
+  @media (max-width: 1216px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

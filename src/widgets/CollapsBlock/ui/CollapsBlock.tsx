@@ -1,4 +1,4 @@
-import '../../../feature/utils.css'
+import "../../../feature/utils.css";
 import { FC, useState } from "react";
 
 import { Text } from "../../../shared/Components/Text";
@@ -20,7 +20,8 @@ export const CollapsBlock: FC<CollapsBlockInterface> = ({
   return (
     <div onClick={activeFunc} className={clsx(styles.collapsBlock)}>
       <div className={clsx(styles.collapsBlockTitle)}>
-        <Text variant="body1">{title}</Text> <span className={active ? 'rotate' : ''}>{">"}</span>
+        <Text variant="body1">{title}</Text>{" "}
+        <span className={active ? "rotate" : ""}>{">"}</span>
       </div>
       {active ? <Text variant="h4">{children}</Text> : null}
     </div>
