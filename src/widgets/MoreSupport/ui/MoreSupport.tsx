@@ -11,7 +11,7 @@ import Icon2 from "../../../shared/assets/icons/More-2.svg";
 import Icon3 from "../../../shared/assets/icons/More-3.svg";
 import Icon4 from "../../../shared/assets/icons/More-4.svg";
 import Icon5 from "../../../shared/assets/icons/More-5.svg";
-import Icon6 from "../../../shared/assets/icons/More-6.svg";
+import Icon6 from "../../../shared/assets/icons/more-6.svg";
 
 export const MoreSupport = () => {
   return (
