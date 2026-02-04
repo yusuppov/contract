@@ -8,7 +8,7 @@ import Icon from "../../../shared/assets/img/bagpack.svg";
 
 export const HomeBackpack = () => {
   return (
-    <ContainerFlex className="reverseFlexUtil pb48">
+    <ContainerFlex className="reverseFlexUtil pb48 pt72" id="backpack">
       <div className={styles.backpackImg}>
         <Text variant="h2">Социальные льготы и гарантии</Text>
         <Icon />

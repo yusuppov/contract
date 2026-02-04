@@ -5,7 +5,7 @@ import styles from "../ui/Items.module.css";
 
 export const Items = () => {
   return (
-    <div className={styles.itemsGrid}>
+    <div className={styles.itemsGrid} id="items">
       <CollapsBlock title="Как заключаются контракты">
         <Text variant="h4">
           Контракт о прохождении военной службы заключается с начальником пункта

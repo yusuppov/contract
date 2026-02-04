@@ -10,7 +10,7 @@ import { Button } from "../../../shared/Components/Button";
 export const HomeReward = () => {
   return (
     <ContainerFlex>
-      <div className={styles.containerReward}>
+      <div className={styles.containerReward} id="reward">
         <Text className="mb40 textAlign" variant="h2">
           Денежные выплаты
         </Text>

@@ -13,7 +13,7 @@ import IconFile4 from "../../../shared/assets/icons/stethoscope-solid.svg";
 
 export const HomeInfo = () => {
   return (
-    <div>
+    <div id="info" className="pb78">
       <ContainerFlex>
         <Text className={styles.containerTopTitle} variant="h2">
           Этапы подписания контракта

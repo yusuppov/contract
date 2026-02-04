@@ -5,7 +5,10 @@
   width: 100%;
   border-radius: 12px;
   padding: 24px;
-  @media (max-width: 1216px) {
+}
+
+@media (max-width: 1216px) {
+  .card {
     flex-direction: row;
     align-items: center;
   }

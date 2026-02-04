@@ -66,11 +66,21 @@
 .mt72 {
   margin-top: 72px;
 }
+
 .pb48 {
   padding-bottom: 48px;
 }
+
+.pb78 {
+  padding-bottom: 78px;
+}
+
 .pl72 {
   padding-left: 72px !important;
+}
+
+.pt72 {
+  padding-top: 72px;
 }
 @media (max-width: 1216px) {
   .pl72 {
