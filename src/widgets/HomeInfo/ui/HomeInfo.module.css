@@ -1,4 +1,7 @@
 .containerTopTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column-start: 2;
   grid-column-end: span 6;
   text-align: center;
@@ -10,14 +13,35 @@
 }
 
 .cardsGrid {
+  grid-column: 2 / -2;
+  gap: 32px;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 2px solid #4d83fa;
+  padding-top: 78px;
   margin-top: 32px;
-  @media (max-width: 1216px) {
+}
+
+.cardsGrid div {
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 1216px) {
+  .cardsGrid {
     display: flex;
     flex-direction: column;
   }
+  .cardsGrid div {
+    max-width: none;
+  }
+}
+
+.cardsGrid svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
 }
 
 .cardGrid1 {
