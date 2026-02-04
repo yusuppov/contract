@@ -11,9 +11,10 @@ import { Text } from "../../Text";
 interface CardInterface {
   color: "yellow" | "green" | "violet" | "turq";
   text: string;
+  onClick?: () => void;
 }
 
-export const Card: FC<CardInterface> = ({ color, text }) => {
+export const Card: FC<CardInterface> = ({ color, text, onClick }) => {
   const CardIcon =
     color === "violet"
       ? VioletIcon
@@ -26,6 +27,7 @@ export const Card: FC<CardInterface> = ({ color, text }) => {
             : "";
   return (
     <div
+      onClick={onClick}
       className={clsx(
         styles.card,
         color === "green" ? styles.greenCard : null,

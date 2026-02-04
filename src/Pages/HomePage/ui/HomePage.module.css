@@ -10,7 +10,6 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 78px;
   grid-column: 2 / -2;
   max-width: 1216px;
 }

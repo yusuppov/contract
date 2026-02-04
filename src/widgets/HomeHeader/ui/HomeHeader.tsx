@@ -8,6 +8,10 @@ import { Button } from "../../../shared/Components/Button";
 import { Card } from "../../../shared/Components/Card/ui";
 
 export const HomeHeader = () => {
+  const handleScroll = (k: number) => {
+    const arr = ["info", "reward", "backpack", "items"];
+    document.getElementById(arr[k])?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className={styles.homeHeaderWrapper}>
       <ContainerFlex>
@@ -39,10 +43,26 @@ export const HomeHeader = () => {
       </ContainerFlex>
       <ContainerFlex>
         <div className={styles.cardsBox}>
-          <Card color="violet" text="Как стать контрактником" />
-          <Card color="turq" text="Как стать контрактником" />
-          <Card color="yellow" text="Как стать контрактником" />
-          <Card color="green" text="Как стать контрактником" />
+          <Card
+            color="violet"
+            text="Как стать контрактником"
+            onClick={() => handleScroll(0)}
+          />
+          <Card
+            color="turq"
+            text="Денежные выплаты"
+            onClick={() => handleScroll(1)}
+          />
+          <Card
+            color="yellow"
+            text="Льготы и гарантии"
+            onClick={() => handleScroll(2)}
+          />
+          <Card
+            color="green"
+            text="Частые вопросы"
+            onClick={() => handleScroll(3)}
+          />
         </div>
       </ContainerFlex>
     </div>
