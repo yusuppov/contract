@@ -7,19 +7,35 @@
   padding: 24px 24px 16px 24px;
 }
 
+.collapsBlock:hover {
+  cursor: pointer;
+}
+
 .collapsBlockTitle {
   display: flex;
   justify-content: space-between;
   user-select: none;
-  span {
-    background-color: #ddf5e7;
-    color: #16a086;
-    border-radius: 100%;
-    width: 24px;
-    height: 24px;
-    font-weight: 500;
-    transform: rotate(90deg);
-    padding-left: 7px;
-    padding-top: 3px;
-  }
+  position: relative;
+}
+
+.collapsBlockTitle span {
+  top: 0;
+  right: 0;
+  color: #16a086;
+  font-weight: 500;
+  transform: rotate(90deg) translateY(1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  padding: 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #ddf5e7;
+  border-radius: 100%;
 }
