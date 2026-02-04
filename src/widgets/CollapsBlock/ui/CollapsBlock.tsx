@@ -8,7 +8,7 @@ import clsx from "clsx";
 
 interface CollapsBlockInterface {
   title: string;
-  children: string;
+  children: React.ReactNode;
 }
 
 export const CollapsBlock: FC<CollapsBlockInterface> = ({
@@ -21,7 +21,9 @@ export const CollapsBlock: FC<CollapsBlockInterface> = ({
     <div onClick={activeFunc} className={clsx(styles.collapsBlock)}>
       <div className={clsx(styles.collapsBlockTitle)}>
         <Text variant="body1">{title}</Text>{" "}
-        <span className={active ? "rotate" : ""}>{">"}</span>
+        <div className={clsx(styles.circle)}>
+          <span className={active ? "rotate" : ""}>{">"}</span>
+        </div>
       </div>
       {active ? <Text variant="h4">{children}</Text> : null}
     </div>
