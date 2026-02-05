@@ -17,12 +17,12 @@
   <path d="M93.1022 40.2853L88.2831 39.6465L92.5643 45.0036L91.0289 47.6373L93.4384 49.8339L90.6366 56.0764L97.2377 53.8125L99.0197 56.9393L101.743 55.1462" stroke="black" stroke-width="0.840546" stroke-linecap="round" stroke-linejoin="round"/>
   <defs>
     <linearGradient id="paint0_linear_3068_24592" x1="224.659" y1="30.9533" x2="207.238" y2="202.998" gradientUnits="userSpaceOnUse">
-      <stop offset="0.16" stop-color="#7FE0B6"/>
-      <stop offset="0.24" stop-color="#7FE0B6" stop-opacity="0.94"/>
-      <stop offset="0.41" stop-color="#7FE0B6" stop-opacity="0.77"/>
-      <stop offset="0.64" stop-color="#7FE0B6" stop-opacity="0.49"/>
-      <stop offset="0.92" stop-color="#7FE0B6" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#7FE0B6" stop-opacity="0"/>
+      <stop offset="0.16" stop-color="#8b2424"/>
+      <stop offset="0.24" stop-color="#8b2424" stop-opacity="0.94"/>
+      <stop offset="0.41" stop-color="#8b2424" stop-opacity="0.77"/>
+      <stop offset="0.64" stop-color="#8b2424" stop-opacity="0.49"/>
+      <stop offset="0.92" stop-color="#8b2424" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#8b2424" stop-opacity="0"/>
     </linearGradient>
   </defs>
 </svg>

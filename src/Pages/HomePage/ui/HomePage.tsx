@@ -7,6 +7,7 @@ import { HomeBackpack } from "../../../widgets/HomeBackpack";
 import { MoreSupport } from "../../../widgets/MoreSupport";
 import { Items } from "../../../widgets/Items";
 import { Branch } from "../../../widgets/Branch";
+import { Conditions } from "../../../widgets/Conditions";
 
 export const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ export const HomePage = () => {
         <HomeBackpack />
         <MoreSupport />
         <Branch />
+        <Conditions />
         <Items />
       </div>
     </div>

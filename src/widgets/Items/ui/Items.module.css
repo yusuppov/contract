@@ -2,6 +2,13 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  grid-column: 2 / -2;
+  
   margin-bottom: 72px;
+}
+
+.itemsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 72px; 
+  grid-column: 2 / -2;
 }
