@@ -4,7 +4,7 @@
   gap: 24px;
   width: 100%;
   border-radius: 12px;
-  padding: 24px;
+  padding: 20px;
 }
 
 @media (max-width: 1216px) {
@@ -34,6 +34,14 @@
   border: 2px solid #16a086;
 }
 
+.redCard {
+  background-color: #ffaeae;
+  border: 2px solid #b30c0c;
+}
+.blueCard {
+  background-color: #aeafff;
+  border: 2px solid #0c0fb3;
+}
 .cardIconWrapper {
   width: 48px;
   height: 48px;

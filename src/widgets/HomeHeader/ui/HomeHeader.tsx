@@ -9,8 +9,10 @@ import { Card } from "../../../shared/Components/Card/ui";
 
 export const HomeHeader = () => {
   const handleScroll = (k: number) => {
-    const arr = ["info", "reward", "backpack", "items"];
-    document.getElementById(arr[k])?.scrollIntoView({ behavior: "smooth" });
+    const arr = ["info", "reward", "backpack", "items", "branch", "conditions"];
+    document
+      .getElementById(arr[k])
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
   return (
     <div className={styles.homeHeaderWrapper}>
@@ -45,7 +47,7 @@ export const HomeHeader = () => {
         <div className={styles.cardsBox}>
           <Card
             color="violet"
-            text="Как стать контрактником"
+            text="Этапы подписания"
             onClick={() => handleScroll(0)}
           />
           <Card
@@ -59,9 +61,19 @@ export const HomeHeader = () => {
             onClick={() => handleScroll(2)}
           />
           <Card
+            color="red"
+            text="Специальности"
+            onClick={() => handleScroll(4)}
+          />
+          <Card
             color="green"
             text="Частые вопросы"
             onClick={() => handleScroll(3)}
+          />
+          <Card
+            color="blue"
+            text="Условия контракта"
+            onClick={() => handleScroll(5)}
           />
         </div>
       </ContainerFlex>

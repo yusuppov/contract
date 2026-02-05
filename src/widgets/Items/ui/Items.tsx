@@ -9,7 +9,7 @@ export const Items = () => {
     <ContainerFlex>
       <div className={styles.itemsWrapper}>
         <Text variant="h2">Часто задаваемые вопросы</Text>
-        <div className={styles.itemsGrid} id="items">
+        <div className={styles.itemsGrid}>
           <CollapsBlock title="Как заключаются контракты">
             <Text variant="h4">
               Контракт о прохождении военной службы заключается с начальником
