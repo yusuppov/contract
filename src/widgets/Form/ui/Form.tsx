@@ -1,30 +1,20 @@
 import { useState } from "react";
+import { Text } from "../../../shared/Components/Text";
+import { Link } from "react-router-dom";
 
 import styles from "./Form.module.css";
 
 export const Form = () => {
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
   const [phone, setPhone] = useState("");
-
+  const [agree, setAgree] = useState(false);
   const [errors, setErrors] = useState({
-    name: "",
-    surname: "",
     phone: "",
   });
 
   const validate = () => {
-    const newErrors = { name: "", surname: "", phone: "" };
+    const newErrors = { phone: "" };
     let valid = true;
 
-    if (!name.trim()) {
-      newErrors.name = "Введите имя";
-      valid = false;
-    }
-    if (!surname.trim()) {
-      newErrors.surname = "Введите фамилию";
-      valid = false;
-    }
     if (!phone.trim()) {
       newErrors.phone = "Введите номер телефона";
       valid = false;
@@ -42,54 +32,48 @@ export const Form = () => {
 
     if (!validate()) return;
 
-    console.log({ name, surname, phone });
-    alert(`Форма отправлена!\n${name} ${surname}\n${phone}`);
-
-    setName("");
-    setSurname("");
     setPhone("");
-    setErrors({ name: "", surname: "", phone: "" });
+    setErrors({ phone: "" });
   };
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.field}>
-        <label>Имя</label>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Введите имя"
-        />
-        {errors.name && <span className={styles.error}>{errors.name}</span>}
-      </div>
-
-      <div className={styles.field}>
-        <label>Фамилия</label>
-        <input
-          type="text"
-          value={surname}
-          onChange={(e) => setSurname(e.target.value)}
-          placeholder="Введите фамилию"
-        />
-        {errors.surname && (
-          <span className={styles.error}>{errors.surname}</span>
-        )}
-      </div>
-
-      <div className={styles.field}>
-        <label>Номер телефона</label>
+        <Text style={{ lineHeight: "110%", marginBottom: "20px" }} variant="h2">
+          Заключи контракт на СВО с Минобороны
+          <br /> Выплаты:17 500 000 ₽
+        </Text>
         <input
           type="tel"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           placeholder="+7 (999) 999-99-99"
+          className={styles.formInput}
         />
         {errors.phone && <span className={styles.error}>{errors.phone}</span>}
       </div>
-
-      <button type="submit" className={styles.submit}>
-        Отправить
+      <label style={{ display: "flex", gap: 10, alignItems: "center" }}>
+        <input
+          type="checkbox"
+          checked={agree}
+          onChange={(e) => setAgree(e.target.checked)}
+          style={{ width: "60px", height: "30px" }}
+        />
+        <span>
+          Нажимая кнопку, я подтверждаю, что ознакомлен(а) и согласен(а) с{" "}
+          <Link to="/conf" target="_blank">
+            политикой конфиденциальности
+          </Link>{" "}
+          и даю{" "}
+          <Link to="/personal" target="_blank">
+            согласие на обработку персональных данных и получение информационных
+            СМС
+          </Link>
+          .
+        </span>
+      </label>
+      <button disabled={!agree} type="submit" className={styles.submit}>
+        <Text variant="h4">Оставить заявку</Text>
       </button>
     </form>
   );

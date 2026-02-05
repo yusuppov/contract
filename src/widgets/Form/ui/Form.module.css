@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
   z-index: 999999;
 }
@@ -10,6 +10,8 @@
 .field {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  color: rgb(70, 70, 245);
 }
 
 label {
@@ -18,15 +20,15 @@ label {
 }
 
 input {
-  padding: 8px 12px;
+  padding: 20px 20px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 14px;
 }
 
 input:focus {
   outline: none;
-  border-color: #00bff3;
+  border-color: rgb(70, 70, 245);
 }
 
 .error {
@@ -36,8 +38,8 @@ input:focus {
 }
 
 .submit {
-  padding: 10px 16px;
-  background-color: #00bff3;
+  padding: 20px 16px;
+  background-color: rgb(70, 70, 245);
   color: white;
   border: none;
   border-radius: 6px;
