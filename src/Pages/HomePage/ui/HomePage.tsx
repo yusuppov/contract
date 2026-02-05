@@ -6,6 +6,7 @@ import { HomeReward } from "../../../widgets/HomeReward";
 import { HomeBackpack } from "../../../widgets/HomeBackpack";
 import { MoreSupport } from "../../../widgets/MoreSupport";
 import { Items } from "../../../widgets/Items";
+import { Branch } from "../../../widgets/Branch";
 
 export const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ export const HomePage = () => {
         <HomeReward />
         <HomeBackpack />
         <MoreSupport />
+        <Branch />
         <Items />
       </div>
     </div>
