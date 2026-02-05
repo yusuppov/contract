@@ -118,3 +118,8 @@
 .blueBorder h3 {
   font-size: 20px;
 }
+
+.fillNone svg { 
+  fill: none !important;
+  color: white;
+}
