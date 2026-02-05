@@ -8,8 +8,8 @@ import "../../../feature/utils.css";
 import Icon from "../../../shared/assets/img/document.svg";
 import IconFile1 from "../../../shared/assets/icons/file-contract-solid.svg";
 import IconFile2 from "../../../shared/assets/icons/file-lines-solid.svg";
-import IconFile3 from "../../../shared/assets/icons/handshake-solid.svg";
-import IconFile4 from "../../../shared/assets/icons/stethoscope-solid.svg";
+import IconFile3 from "../../../shared/assets/icons/hotel.svg";
+import IconFile4 from "../../../shared/assets/icons/handshake-solid.svg";
 
 export const HomeInfo = () => {
   return (
@@ -35,8 +35,8 @@ export const HomeInfo = () => {
             icon={<IconFile2 />}
           ></InfoCard>
           <InfoCard
-            className="blueBorder"
-            title="Мед. комисиия"
+            className="blueBorder fillNone"
+            title="Пункт отбора"
             icon={<IconFile3 />}
           ></InfoCard>
           <InfoCard
