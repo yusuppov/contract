@@ -17,7 +17,7 @@ export const MoreSupport = () => {
   return (
     <ContainerFlex>
       <div className={styles.containerWrapper}>
-        <div className={styles.containerFlex}>
+        <div className={clsx(styles.containerFlex, "mb32")}>
           <Text as="h2" variant="h2">
             Дополнительные меры поддержки участников СВО
           </Text>
