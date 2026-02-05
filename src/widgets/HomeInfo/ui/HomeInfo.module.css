@@ -14,9 +14,9 @@
 
 .cardsGrid {
   grid-column: 2 / -2;
-  gap: 32px;
+  gap: 10px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
   border-top: 2px solid #4d83fa;
   padding-top: 78px;
   margin-top: 32px;
@@ -45,65 +45,32 @@
 }
 
 .cardGrid1 {
-  grid-column-start: 2;
-  grid-column-end: span 4;
+  grid-column-start: 1;
 }
 
 .cardGrid2 {
-  grid-column: 6 span;
+  grid-column-start: 3;
 }
 
 .cardGrid3 {
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-column-end: -2;
+  grid-column-start: 5;
 }
 
-ol {
-  list-style-type: none;
-  counter-reset: num;
+.cardGrid4 {
+  grid-column-start: 7;
 }
 
-.listUl {
-  list-style: none;
-  li {
-    margin-left: 20px;
-    position: relative;
-  }
-
-  li:before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: #16a086 !important;
-    width: 8px;
-    height: 2px;
-    left: -18px;
-    top: 12px;
-    margin-right: 15px;
-  }
-}
-
-.cardListLi {
-  margin-left: 18px;
-  position: relative;
-  &:before {
-    content: counter(num) ".";
-    counter-increment: num;
-    display: inline-block;
-    position: absolute;
-    top: 3px;
-    left: -26px;
-    width: 20px;
-    font-weight: 700;
-    color: #16a086 !important;
-    text-align: right;
-  }
-}
-
-.listUl {
+.arrowIcon {
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin: 12px 0;
+  justify-content: center;
+  color: #4d83fa;
+}
+
+@media (max-width: 1216px) {
+  .arrowIcon {
+    transform: rotate(90deg);
+    width: min-content;
+    margin: 0 auto;
+  }
 }

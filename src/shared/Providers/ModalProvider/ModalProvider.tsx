@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ModalContext } from "../ModalContext";
-
+import styles from "./ModalProvider.module.css";
 import { Form } from "../../../widgets/Form";
 
 export const ModalProvider = ({ children }: { children: React.ReactNode }) => {
@@ -36,7 +36,7 @@ export const ModalProvider = ({ children }: { children: React.ReactNode }) => {
           onClick={close}
         >
           <div
-            style={{ background: "white", padding: 50, borderRadius: 12 }}
+            className={styles.formWrapper}
             onClick={(e) => e.stopPropagation()}
           >
             <Form />

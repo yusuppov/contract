@@ -66,14 +66,14 @@ export const HomeHeader = () => {
             onClick={() => handleScroll(4)}
           />
           <Card
-            color="green"
-            text="Частые вопросы"
-            onClick={() => handleScroll(3)}
-          />
-          <Card
             color="blue"
             text="Условия контракта"
             onClick={() => handleScroll(5)}
+          />
+          <Card
+            color="green"
+            text="Частые вопросы"
+            onClick={() => handleScroll(3)}
           />
         </div>
       </ContainerFlex>

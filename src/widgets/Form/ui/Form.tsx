@@ -40,8 +40,7 @@ export const Form = () => {
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.field}>
         <Text style={{ lineHeight: "110%", marginBottom: "20px" }} variant="h2">
-          Заключи контракт на СВО с Минобороны
-          <br /> Выплаты:17 500 000 ₽
+          Оставить заявку
         </Text>
         <input
           type="tel"
@@ -57,9 +56,9 @@ export const Form = () => {
           type="checkbox"
           checked={agree}
           onChange={(e) => setAgree(e.target.checked)}
-          style={{ width: "60px", height: "30px" }}
+          className={styles.checkBox}
         />
-        <span>
+        <span className={styles.spanTextFont}>
           Нажимая кнопку, я подтверждаю, что ознакомлен(а) и согласен(а) с{" "}
           <Link to="/conf" target="_blank">
             политикой конфиденциальности
@@ -73,7 +72,7 @@ export const Form = () => {
         </span>
       </label>
       <button disabled={!agree} type="submit" className={styles.submit}>
-        <Text variant="h4">Оставить заявку</Text>
+        <Text variant="h4">Отправить</Text>
       </button>
     </form>
   );
