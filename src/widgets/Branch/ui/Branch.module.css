@@ -1,0 +1,22 @@
+.branchGrid {
+  display: grid;
+  grid-column: 2 / -2;
+  grid-template-rows: max-content max-content;
+  grid-template-columns: repeat(3, 1fr);
+  color: white;
+  gap: 32px;
+  padding: 72px 0;
+  border-bottom: 2px solid #16a086;
+  margin-bottom: 72px;
+}
+
+@media (max-width: 1216px) {
+  .branchGrid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.branchWrapper {
+  grid-column: 2 / -2;
+}

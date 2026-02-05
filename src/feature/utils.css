@@ -119,7 +119,7 @@
   font-size: 20px;
 }
 
-.fillNone svg { 
+.fillNone svg {
   fill: none !important;
   color: white;
 }
