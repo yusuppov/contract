@@ -18,9 +18,16 @@ export const HomePage = () => {
         <HomeReward />
         <HomeBackpack />
         <MoreSupport />
-        <Branch />
-        <Conditions />
-        <Items />
+
+        <section id="branch">
+          <Branch />
+        </section>
+        <section id="conditions">
+          <Conditions />
+        </section>
+        <section id="items">
+          <Items />
+        </section>
       </div>
     </div>
   );
