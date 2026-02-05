@@ -1,1 +1,1 @@
-export * from './Branch'
+export * from "./Branch";
