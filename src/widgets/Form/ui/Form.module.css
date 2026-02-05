@@ -7,6 +7,9 @@
   z-index: 999999;
 }
 
+@media (max-width: 1216px) {
+}
+
 .field {
   display: flex;
   flex-direction: column;
@@ -50,4 +53,20 @@ input:focus {
 
 .submit:hover {
   background-color: #009ac0;
+}
+
+.checkBox {
+  width: 60px;
+  height: 30px;
+}
+
+@media (max-width: 1216px) {
+  .checkBox {
+    width: 30px;
+    height: 30px;
+  }
+
+  .spanTextFont {
+    font-size: 14px;
+  }
 }

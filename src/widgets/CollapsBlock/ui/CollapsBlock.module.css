@@ -19,18 +19,18 @@
 }
 
 .collapsBlockTitle span {
-  top: 0;
-  right: 0;
   color: #16a086;
   font-weight: 500;
-  transform: rotate(90deg) translateY(1px);
+  width: 20px;
+  transform: rotate(180deg);
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .circle {
   padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   right: 0;
   top: 0;

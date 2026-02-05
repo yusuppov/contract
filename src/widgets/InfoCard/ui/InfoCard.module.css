@@ -5,6 +5,7 @@
   border: 2px solid #16a086;
   padding: 24px;
   border-radius: 12px;
+  width: 100%;
 }
 .cardWrapper {
   position: relative;
