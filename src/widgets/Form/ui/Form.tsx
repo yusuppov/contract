@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Text } from "../../../shared/Components/Text";
-import { Link } from "react-router-dom";
 
 import styles from "./Form.module.css";
 
@@ -52,15 +51,8 @@ export const Form = () => {
       </div>
       <label style={{ display: "flex", gap: 10, alignItems: "center" }}>
         <span className={styles.spanTextFont}>
-          Нажимая на кнопку «Отправить», я подтверждаю своё согласие с{" "}
-          <Link to="/conf" target="_blank">
-            условиями политики обработки данных
-          </Link>{" "}
-          и даю{" "}
-          <Link to="/personal" target="_blank">
-            согласие на обработку персональных данных"
-          </Link>
-          .
+          Нажимая «Отправить», вы даёте согласие на обработку персональных
+          данных и принимаете условия политики конфиденциальности
         </span>
       </label>
 
