@@ -40,7 +40,7 @@ export const HomeHeader = () => {
         </div>
         <div className={styles.rightContainer}>
           <img src={SoldatImg} alt="#" />
-          <Button text="Записаться" />
+          <Button text="Записаться на военную службу" />
         </div>
       </ContainerFlex>
       <ContainerFlex>
