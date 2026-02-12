@@ -29,10 +29,9 @@
   font-size: 20px !important;
 }
 
-.cardsGrid h3  { 
+.cardsGrid h3 {
   font-size: 20px;
 }
-
 
 @media (max-width: 1216px) {
   .cardsGrid {
@@ -50,12 +49,9 @@
   fill: white;
 }
 
-
 .cardGrid1 {
   grid-column-start: 1;
 }
-
-
 
 .cardGrid2 {
   grid-column-start: 3;

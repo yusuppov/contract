@@ -40,3 +40,18 @@
   background-color: #ddf5e7;
   border-radius: 100%;
 }
+
+.collapsIcon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.collapsIconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.collapsIconWrapper span {
+  width: 100%;
+}

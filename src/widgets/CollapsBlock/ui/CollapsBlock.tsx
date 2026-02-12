@@ -11,6 +11,7 @@ interface CollapsBlockInterface {
   children: React.ReactNode;
   className?: string;
   variant?: "body1" | "caption3";
+  icon?: React.ReactNode;
 }
 
 export const CollapsBlock: FC<CollapsBlockInterface> = ({
@@ -18,13 +19,17 @@ export const CollapsBlock: FC<CollapsBlockInterface> = ({
   children,
   className,
   variant,
+  icon,
 }) => {
   const [active, setActive] = useState(false);
   const activeFunc = () => setActive(!active);
   return (
     <div onClick={activeFunc} className={clsx(styles.collapsBlock, className)}>
       <div className={clsx(styles.collapsBlockTitle)}>
-        <Text variant={variant ? variant : "body1"}>{title}</Text>{" "}
+        <div className={styles.collapsIconWrapper}>
+          <div className={styles.collapsIcon}>{icon} </div>
+          <Text variant={variant ? variant : "body1"}>{title}</Text>
+        </div>{" "}
         <div className={clsx(styles.circle, active ? "rotate" : "")}>
           <span>
             <IconSmall />

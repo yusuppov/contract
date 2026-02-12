@@ -9,17 +9,17 @@
   }
 }
 
-.backpackWrapper { 
+.backpackWrapper {
   padding: 72px 100px;
   display: flex;
   flex-direction: column;
   gap: 72px;
 }
 
-@media (max-width: 1216px) { 
-.backpackWrapper { 
-  padding: 72px 0;
-}
+@media (max-width: 1216px) {
+  .backpackWrapper {
+    padding: 72px 0;
+  }
 }
 
 .backpackInfo {
@@ -35,17 +35,15 @@
   gap: 16px;
 }
 
-
-
-.blockCollapsBlock { 
+.blockCollapsBlock {
   border: none !important;
   padding: 15px 15px 11px 4px !important;
 }
 
-.blockCollapsBlock div { 
+.blockCollapsBlock div {
   top: -4px;
 }
 
-/* .blockCollapsBlock p { 
-  margin-right: 22px;
-} */
+.blockCollapsBlock p {
+  padding-left: 36px;
+}

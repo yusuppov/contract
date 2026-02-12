@@ -27,8 +27,6 @@
   transform: translateX(20px);
 }
 
-
-
 .smallTurqCircle:before {
   width: 8px;
   height: 8px;
@@ -41,11 +39,11 @@
   border-radius: 1000px;
 }
 
-.smallTurqCircleForCollaps  { 
+.smallTurqCircleForCollaps {
   position: relative;
   transform: translateX(20px);
 }
-.smallTurqCircleForCollaps::before { 
+.smallTurqCircleForCollaps::before {
   width: 8px;
   height: 8px;
   content: "";
@@ -57,13 +55,12 @@
   border-radius: 1000px;
 }
 
-
 .textAlign {
   text-align: center;
 }
 
-.w227 {
-  max-width: 227px;
+.w300 {
+  max-width: 300px;
 }
 
 .rotate {
