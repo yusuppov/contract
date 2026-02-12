@@ -27,7 +27,7 @@ export const HomeInfo = () => {
       <ContainerFlex>
         <div className={styles.cardsGrid}>
           <InfoCard
-            className={clsx("blueBorder", styles.cardGrid1)}
+            className={styles.cardGrid1}
             title="Оставить заявку"
             icon={<IconFile1 />}
           ></InfoCard>
@@ -36,7 +36,7 @@ export const HomeInfo = () => {
           </div>
 
           <InfoCard
-            className={clsx("blueBorder", styles.cardGrid2)}
+            className={styles.cardGrid2}
             title="Пройти собеседование"
             icon={<IconFile2 />}
           ></InfoCard>
@@ -44,7 +44,7 @@ export const HomeInfo = () => {
             <IconArrow />
           </div>
           <InfoCard
-            className={clsx("blueBorder", "fillNone", styles.cardGrid3)}
+            className={clsx("fillNone", styles.cardGrid3)}
             title="Пункт отбора"
             icon={<IconFile3 />}
           ></InfoCard>
@@ -52,7 +52,7 @@ export const HomeInfo = () => {
             <IconArrow />
           </div>
           <InfoCard
-            className={clsx("blueBorder", styles.cardGrid4)}
+            className={styles.cardGrid4}
             title="Заключить контракт"
             icon={<IconFile4 />}
           ></InfoCard>

@@ -1,17 +1,13 @@
 import styles from "./HomeBackpack.module.css";
 
-import { ContainerFlex } from "../../ContainerFlex";
 import { Text } from "../../../shared/Components/Text";
 import { InfoCard } from "../../InfoCard";
 
-import Icon from "../../../shared/assets/img/bagpack.svg";
-
 export const HomeBackpack = () => {
   return (
-    <ContainerFlex className="reverseFlexUtil pb48 pt72" id="backpack">
+    <div>
       <div className={styles.backpackImg}>
         <Text variant="h2">Социальные льготы и гарантии</Text>
-        <Icon />
       </div>
       <div className={styles.backpackInfo}>
         <InfoCard title="Контрактнику">
@@ -69,6 +65,6 @@ export const HomeBackpack = () => {
           </ul>
         </InfoCard>
       </div>
-    </ContainerFlex>
+    </div>
   );
 };
