@@ -18,7 +18,7 @@ export const HomeInfo = () => {
     <div id="info" className="pb78">
       <ContainerFlex>
         <Text className={styles.containerTopTitle} variant="h2">
-          Этапы подписания контракта
+          Этапы заключения контракта
         </Text>
         <div className={styles.containerTopIcon}>
           <Icon></Icon>
