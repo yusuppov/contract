@@ -36,7 +36,7 @@ export const CollapsBlock: FC<CollapsBlockInterface> = ({
           </span>
         </div>
       </div>
-      {active ? <Text variant="h4">{children}</Text> : null}
+      {active ? <Text variant="h4" className={styles.textStyle}>{children}</Text> : null}
     </div>
   );
 };
