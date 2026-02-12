@@ -6,7 +6,6 @@ import styles from "./Form.module.css";
 
 export const Form = () => {
   const [phone, setPhone] = useState("");
-  const [agree, setAgree] = useState(false);
   const [errors, setErrors] = useState({
     phone: "",
   });
@@ -52,26 +51,20 @@ export const Form = () => {
         {errors.phone && <span className={styles.error}>{errors.phone}</span>}
       </div>
       <label style={{ display: "flex", gap: 10, alignItems: "center" }}>
-        <input
-          type="checkbox"
-          checked={agree}
-          onChange={(e) => setAgree(e.target.checked)}
-          className={styles.checkBox}
-        />
         <span className={styles.spanTextFont}>
-          Нажимая кнопку, я подтверждаю, что ознакомлен(а) и согласен(а) с{" "}
+          Нажимая на кнопку «Отправить», я подтверждаю своё согласие с{" "}
           <Link to="/conf" target="_blank">
-            политикой конфиденциальности
+            условиями политики обработки данных
           </Link>{" "}
           и даю{" "}
           <Link to="/personal" target="_blank">
-            согласие на обработку персональных данных и получение информационных
-            СМС
+            согласие на обработку персональных данных"
           </Link>
           .
         </span>
       </label>
-      <button disabled={!agree} type="submit" className={styles.submit}>
+
+      <button type="submit" className={styles.submit}>
         <Text variant="h4">Отправить</Text>
       </button>
     </form>

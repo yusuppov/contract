@@ -11,6 +11,19 @@
   }
 }
 
+.backpackWrapper { 
+  padding: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+@media (max-width: 1216px) { 
+.backpackWrapper { 
+  padding: 72px 0;
+}
+}
+
 .backpackInfo {
   display: flex;
   gap: 32px;

@@ -5,7 +5,7 @@ import { InfoCard } from "../../InfoCard";
 
 export const HomeBackpack = () => {
   return (
-    <div>
+    <div className={styles.backpackWrapper}>
       <div className={styles.backpackImg}>
         <Text variant="h2">Социальные льготы и гарантии</Text>
       </div>
