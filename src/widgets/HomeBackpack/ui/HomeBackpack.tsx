@@ -2,6 +2,7 @@ import styles from "./HomeBackpack.module.css";
 
 import { Text } from "../../../shared/Components/Text";
 import { InfoCard } from "../../InfoCard";
+import { CollapsBlock } from "../../CollapsBlock";
 
 export const HomeBackpack = () => {
   return (
@@ -12,36 +13,93 @@ export const HomeBackpack = () => {
       <div className={styles.backpackInfo}>
         <InfoCard title="Контрактнику">
           <ul className={styles.backpackUl}>
-            <li className="smallTurqCircle">
-              <Text variant="h4">
-                Возможность приобрести жильё за счёт Минобороны через
-                накопительно-ипотечную систему
-              </Text>
+            <li className="smallTurqCircleForCollaps">
+              <CollapsBlock
+                className={styles.blockCollapsBlock}
+                title="Приобретение жилья через Минобороны"
+                variant="caption3"
+              >
+                <Text variant="h4">
+                  Приобретение жилья через Минобороны Возможность купить жильё
+                  за счёт Министерства обороны через накопительно-ипотечную
+                  систему. Надёжный способ улучшить жилищные условия. -
+                  Служебное жильё или компенсация за наём Обеспечение служебным
+                  жильём или денежная компенсация для аренды жилья.{" "}
+                </Text>
+              </CollapsBlock>
+            </li>
+            <li className="smallTurqCircleForCollaps">
+              <CollapsBlock
+                className={styles.blockCollapsBlock}
+                title="Служебное жильё или компенсация за наём"
+                variant="caption3"
+              >
+                <Text variant="h4">
+                  Обеспечение служебным жильём или денежная компенсация для
+                  аренды жилья.{" "}
+                </Text>
+              </CollapsBlock>
+            </li>
+            <li className="smallTurqCircleForCollaps">
+              <CollapsBlock
+                className={styles.blockCollapsBlock}
+                title="               Бесплатное обследование, лечение и реабилитация"
+                variant="caption3"
+              >
+                <Text variant="h4">
+                  Полный комплекс медицинских услуг в военно-медицинских
+                  учреждениях без дополнительных затрат.{" "}
+                </Text>
+              </CollapsBlock>
+            </li>
+            <li className="smallTurqCircleForCollaps">
+              <CollapsBlock
+                className={styles.blockCollapsBlock}
+                title="Страхование жизни и здоровья"
+                variant="caption3"
+              >
+                <Text variant="h4">
+                  Надёжная защита и финансовая поддержка в случае несчастного
+                  случая или болезни.{" "}
+                </Text>
+              </CollapsBlock>
+            </li>
+            <li className="smallTurqCircleForCollaps">
+              <CollapsBlock
+                className={styles.blockCollapsBlock}
+                title="Двухнедельный оплачиваемый отпуск"
+                variant="caption3"
+              >
+                <Text variant="h4">
+                  Гарантированный отпуск не реже одного раза в полгода с
+                  сохранением заработка.{" "}
+                </Text>
+              </CollapsBlock>
             </li>
             <li className="smallTurqCircle">
-              <Text variant="h4">Служебное жильё или компенсация за наём</Text>
-            </li>
-            <li className="smallTurqCircle">
-              <Text variant="h4">
-                Бесплатное обследование, лечение и реабилитация в
-                военно-медицинских учреждениях
-              </Text>
+              <CollapsBlock
+                className={styles.blockCollapsBlock}
+                title="Военная пенсия после 20 лет службы"
+                variant="caption3"
+              >
+                <Text variant="h4">
+                  Надёжное пенсионное обеспечение, которое начинается уже после
+                  20 лет службы.{" "}
+                </Text>
+              </CollapsBlock>
             </li>
             <li className="smallTurqCircle">
               {" "}
-              <Text variant="h4">Страхование жизни и здоровья</Text>
-            </li>
-            <li className="smallTurqCircle">
-              <Text variant="h4">
-                Двухнедельный оплачиваемый отпуск не реже 1 раза в полгода
-              </Text>
-            </li>
-            <li className="smallTurqCircle">
-              <Text variant="h4">Военная пенсия после 20 лет службы</Text>
-            </li>
-            <li className="smallTurqCircle">
-              {" "}
-              <Text variant="h4">Региональные меры поддержки</Text>
+              <CollapsBlock
+                className={styles.blockCollapsBlock}
+                title="Региональные меры поддержки"
+                variant="caption3"
+              >
+                <Text variant="h4">
+                  Дополнительные льготы и программы поддержки на уровне
+                  субъектов РФ, учитывающие местные особенности.{" "}
+                </Text>
+              </CollapsBlock>
             </li>
           </ul>
         </InfoCard>

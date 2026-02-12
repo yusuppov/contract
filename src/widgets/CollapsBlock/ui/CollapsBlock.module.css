@@ -16,6 +16,7 @@
   justify-content: space-between;
   user-select: none;
   position: relative;
+  padding-right: 22px;
 }
 
 .collapsBlockTitle span {
