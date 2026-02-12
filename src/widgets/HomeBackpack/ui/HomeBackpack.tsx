@@ -26,7 +26,7 @@ export const HomeBackpack = () => {
                 variant="caption3"
                 icon={<Icon1 />}
               >
-                <Text variant="h4" className="textBorder">
+                <Text variant="h4">
                   Возможность купить жильё за счёт Министерства обороны через
                   накопительно-ипотечную систему. Надёжный способ улучшить
                   жилищные условия.{" "}
