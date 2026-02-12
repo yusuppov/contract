@@ -3,7 +3,7 @@ import { ContainerFlex } from "../../ContainerFlex";
 import { Text } from "../../../shared/Components/Text";
 
 import styles from "./HomeHeader.module.css";
-import Icon from "../../../shared/assets/img/shield.svg";
+import SoldatImg from "../../../shared/assets/img/soldat.jpg";
 import { Button } from "../../../shared/Components/Button";
 import { Card } from "../../../shared/Components/Card/ui";
 
@@ -39,7 +39,7 @@ export const HomeHeader = () => {
           <Text variant="h4">1 год, 3 года или 5 лет</Text>
         </div>
         <div className={styles.rightContainer}>
-          <Icon />
+          <img src={SoldatImg} alt="#" />
           <Button text="Записаться" />
         </div>
       </ContainerFlex>
