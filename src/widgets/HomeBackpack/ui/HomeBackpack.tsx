@@ -1,4 +1,5 @@
 import styles from "./HomeBackpack.module.css";
+import "../../../feature/utils.css"
 import Icon1 from "../../../shared/assets/icons/backPack-1.svg";
 import Icon2 from "../../../shared/assets/icons/backPack-2.svg";
 import Icon3 from "../../../shared/assets/icons/backPack-3.svg";
@@ -26,7 +27,7 @@ export const HomeBackpack = () => {
                 variant="caption3"
                 icon={<Icon1 />}
               >
-                <Text variant="h4" className="textBorder">
+                <Text variant="h4" className="textStyleItalic">
                   Возможность купить жильё за счёт Министерства обороны через
                   накопительно-ипотечную систему. Надёжный способ улучшить
                   жилищные условия.{" "}
