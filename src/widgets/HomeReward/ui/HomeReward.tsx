@@ -86,7 +86,7 @@ export const HomeReward = () => {
             </li>
           </ul>
         </InfoCard>
-        <Button className="w227" text="Записаться" />
+        <Button className="w300" text="Записаться" />
       </div>
     </ContainerFlex>
   );
