@@ -4,15 +4,13 @@
   gap: 40px;
   grid-column-start: 2;
   grid-column-end: span 5;
-  max-width: 488px;
-  margin: 0 auto;
   @media (max-width: 1216px) {
     flex-direction: column-reverse;
   }
 }
 
 .backpackWrapper { 
-  padding: 72px;
+  padding: 72px 95px;
   display: flex;
   flex-direction: column;
   gap: 72px;
