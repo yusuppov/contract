@@ -7,6 +7,13 @@
   border-radius: 12px;
   width: 100%;
 }
+
+@media (max-width:1216px) { 
+  .card { 
+    padding: 15px;
+} 
+}
+
 .cardWrapper {
   position: relative;
   display: flex;

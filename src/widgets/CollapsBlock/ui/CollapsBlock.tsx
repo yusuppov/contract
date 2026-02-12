@@ -28,7 +28,9 @@ export const CollapsBlock: FC<CollapsBlockInterface> = ({
       <div className={clsx(styles.collapsBlockTitle)}>
         <div className={styles.collapsIconWrapper}>
           <div className={styles.collapsIcon}>{icon} </div>
-          <Text variant={variant ? variant : "body1"}>{title}</Text>
+          <Text as="h2" variant={variant ? variant : "body1"}>
+            {title}
+          </Text>
         </div>{" "}
         <div className={clsx(styles.circle, active ? "rotate" : "")}>
           <span>
@@ -36,7 +38,11 @@ export const CollapsBlock: FC<CollapsBlockInterface> = ({
           </span>
         </div>
       </div>
-      {active ? <Text variant="h4" className={styles.textStyle}>{children}</Text> : null}
+      {active ? (
+        <Text variant="h4" className={styles.textStyle}>
+          {children}
+        </Text>
+      ) : null}
     </div>
   );
 };

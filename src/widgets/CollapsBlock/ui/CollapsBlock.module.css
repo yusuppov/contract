@@ -44,12 +44,12 @@
 .collapsIcon svg {
   width: 25px;
   height: 25px;
+  margin-right: 25px;
 }
 
 .collapsIconWrapper {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .collapsIconWrapper span {
