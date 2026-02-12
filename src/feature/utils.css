@@ -27,6 +27,8 @@
   transform: translateX(20px);
 }
 
+
+
 .smallTurqCircle:before {
   width: 8px;
   height: 8px;
@@ -38,6 +40,23 @@
   background-color: #52a696;
   border-radius: 1000px;
 }
+
+.smallTurqCircleForCollaps  { 
+  position: relative;
+  transform: translateX(20px);
+}
+.smallTurqCircleForCollaps::before { 
+  width: 8px;
+  height: 8px;
+  content: "";
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  background-color: #52a696;
+  border-radius: 1000px;
+}
+
 
 .textAlign {
   text-align: center;

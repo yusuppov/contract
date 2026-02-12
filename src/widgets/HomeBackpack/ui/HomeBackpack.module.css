@@ -35,6 +35,17 @@
   gap: 16px;
 }
 
-.backpackUl li:before {
-  top: 5px;
+
+
+.blockCollapsBlock { 
+  border: none !important;
+  padding: 15px 15px 11px 4px !important;
 }
+
+.blockCollapsBlock div { 
+  top: -4px;
+}
+
+/* .blockCollapsBlock p { 
+  margin-right: 22px;
+} */
