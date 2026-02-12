@@ -3,7 +3,7 @@ import { ContainerFlex } from "../../ContainerFlex";
 import { Text } from "../../../shared/Components/Text";
 
 import styles from "./HomeHeader.module.css";
-import SoldatImg from "../../../shared/assets/img/soldat.jpg";
+import SoldatImg from "../../../shared/assets/img/soldat.png";
 import { Button } from "../../../shared/Components/Button";
 import { Card } from "../../../shared/Components/Card/ui";
 
