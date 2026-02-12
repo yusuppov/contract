@@ -55,3 +55,7 @@
 .collapsIconWrapper span {
   width: 100%;
 }
+
+.textStyle { 
+  font-style: italic;
+}
