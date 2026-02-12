@@ -51,13 +51,13 @@ export const Form = () => {
       </div>
       <label style={{ display: "flex", gap: 10, alignItems: "center" }}>
         <span className={styles.spanTextFont}>
-          Нажимая «Отправить», вы даёте согласие на обработку персональных
+          Нажимая «Записаться», вы даёте согласие на обработку персональных
           данных и принимаете условия политики конфиденциальности
         </span>
       </label>
 
       <button type="submit" className={styles.submit}>
-        <Text variant="h4">Отправить</Text>
+        <Text variant="h4">Записаться</Text>
       </button>
     </form>
   );

@@ -76,7 +76,7 @@ export const HomeBackpack = () => {
                 </Text>
               </CollapsBlock>
             </li>
-            <li className="smallTurqCircle">
+            <li className="smallTurqCircleForCollaps">
               <CollapsBlock
                 className={styles.blockCollapsBlock}
                 title="Военная пенсия после 20 лет службы"
@@ -88,7 +88,7 @@ export const HomeBackpack = () => {
                 </Text>
               </CollapsBlock>
             </li>
-            <li className="smallTurqCircle">
+            <li className="smallTurqCircleForCollaps">
               {" "}
               <CollapsBlock
                 className={styles.blockCollapsBlock}
