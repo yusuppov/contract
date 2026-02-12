@@ -50,7 +50,7 @@ export const MoreSupport = () => {
           </InfoCard>
         </div>
         <div className={styles.moreButton}>
-          <Button text="Подать заявление" className="w300" />
+          <Button text="Записаться на военную службу" className="w400" />
         </div>
       </div>
     </ContainerFlex>
