@@ -7,8 +7,6 @@
   z-index: 999999;
 }
 
-@media (max-width: 1216px) {
-}
 
 .field {
   display: flex;
@@ -42,7 +40,7 @@ input:focus {
 
 .submit {
   padding: 20px 16px;
-  background-color: rgb(70, 70, 245);
+  background-color: #12826e;
   color: white;
   border: none;
   border-radius: 6px;
@@ -52,7 +50,7 @@ input:focus {
 }
 
 .submit:hover {
-  background-color: #009ac0;
+  background-color: #094238ab;
 }
 
 .checkBox {

@@ -47,7 +47,7 @@ export const HomeHeader = () => {
         <div className={styles.cardsBox}>
           <Card
             color="violet"
-            text="Этапы подписания"
+            text="Как заключить контракт"
             onClick={() => handleScroll(0)}
           />
           <Card
