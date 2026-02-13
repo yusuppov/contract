@@ -16,12 +16,12 @@ export const Branch = () => {
       <div className={styles.branchWrapper}>
         <Text variant="h2">Специальности</Text>
         <div className={styles.branchGrid}>
-          <CardImg title="Танкист" bgImg={TankImg}></CardImg>
-          <CardImg title="Артиллерист" bgImg={ArtirImg}></CardImg>
-          <CardImg title="Штурмовик" bgImg={ShturImg}></CardImg>
-          <CardImg title="Водитель" bgImg={DriverImg}></CardImg>
-          <CardImg title="Сапер" bgImg={SaperImg}></CardImg>
-          <CardImg title="БПЛА" bgImg={BplaImg}></CardImg>
+          <CardImg position={30} title="Танкист" bgImg={TankImg}></CardImg>
+          <CardImg position={40} title="Артиллерист" bgImg={ArtirImg}></CardImg>
+          <CardImg position={40} title="Штурмовик" bgImg={ShturImg}></CardImg>
+          <CardImg position={60} title="Водитель" bgImg={DriverImg}></CardImg>
+          <CardImg position={20} title="Сапер" bgImg={SaperImg}></CardImg>
+          <CardImg position={40} title="БПЛА" bgImg={BplaImg}></CardImg>
         </div>
       </div>
     </ContainerFlex>

@@ -11,6 +11,12 @@
 
 @media (max-width: 1216px) {
   .branchGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 530px) {
+  .branchGrid {
     display: flex;
     flex-direction: column;
   }

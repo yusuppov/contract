@@ -1,12 +1,20 @@
 import { Text } from "../../Text";
 
-export const CardImg = ({ bgImg, title }: { bgImg: string; title: string }) => {
+export const CardImg = ({
+  bgImg,
+  title,
+  position,
+}: {
+  bgImg: string;
+  title: string;
+  position?: number ;
+}) => {
   return (
     <div
       style={{
         backgroundImage: bgImg ? `url(${bgImg})` : undefined,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: `center ${position}%`,
         backgroundRepeat: "no-repeat",
         width: "100%",
         borderRadius: "12px",
