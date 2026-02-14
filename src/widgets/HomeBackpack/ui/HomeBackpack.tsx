@@ -6,6 +6,10 @@ import Icon4 from "../../../shared/assets/icons/backPack-4.svg";
 import Icon5 from "../../../shared/assets/icons/backPack-5.svg";
 import Icon6 from "../../../shared/assets/icons/backPack-6.svg";
 import Icon7 from "../../../shared/assets/icons/backPack-7.svg";
+import Icon8 from "../../../shared/assets/icons/city.svg";
+import Icon9 from "../../../shared/assets/icons/child.svg";
+import Icon10 from "../../../shared/assets/icons/book.svg";
+
 import { Text } from "../../../shared/Components/Text";
 import { InfoCard } from "../../InfoCard";
 import { CollapsBlock } from "../../CollapsBlock";
@@ -116,20 +120,61 @@ export const HomeBackpack = () => {
         </InfoCard>
         <InfoCard title="Семье">
           <ul className={styles.backpackUl}>
-            <li className="smallTurqCircle">
-              <Text variant="h4"> Путёвки в лагеря отдыха для детей</Text>
+            <li>
+              <CollapsBlock
+                className={styles.blockCollapsBlock}
+                title="Путёвки в лагеря отдыха для детей"
+                variant="caption3"
+                icon={<Icon9 />}
+              >
+                <Text variant="h4">
+                  Путевки в лагеря для детей участников специальной военной
+                  операции{" "}
+                </Text>
+              </CollapsBlock>
             </li>
-            <li className="smallTurqCircle">
-              <Text variant="h4">Квоты для обучения детей в вузах</Text>
+            <li>
+              <CollapsBlock
+                className={styles.blockCollapsBlock}
+                title="Квоты для обучения детей в вузах"
+                variant="caption3"
+                icon={<Icon10 />}
+              >
+                <Text variant="h4">
+                  Не менее 10% от общего числа бюджетных мест в вузах и
+                  колледжах по программам бакалавриата/специалитета.{" "}
+                </Text>
+              </CollapsBlock>
             </li>
-            <li className="smallTurqCircle">
-              <Text variant="h4">
-                {" "}
-                Дополнительные меры поддержки — в зависимости от региона
-              </Text>
+            <li>
+              <CollapsBlock
+                className={styles.blockCollapsBlock}
+                title=" Дополнительные меры поддержки — в зависимости от региона"
+                variant="caption3"
+                icon={<Icon7 />}
+              >
+                <Text variant="h4">
+                  Единовременные и ежемесячные денежные выплаты, компенсация
+                  расходов на жилищно-коммунальные услуги, обеспечение
+                  бесплатным питанием обучающихся в общеобразовательных
+                  учреждениях, а также содействие в получении юридической и
+                  психологической помощи.{" "}
+                </Text>
+              </CollapsBlock>
             </li>
-            <li className="smallTurqCircle">
-              <Text variant="h4"> Региональные меры поддержки</Text>
+            <li>
+              <CollapsBlock
+                className={styles.blockCollapsBlock}
+                title=" Региональные меры поддержки"
+                variant="caption3"
+                icon={<Icon8 />}
+              >
+                <Text variant="h4">
+                  Региональные меры социальной поддержки, предоставляемые членам
+                  семей граждан, принимающих (принимавших) участие в специальной
+                  военной операции{" "}
+                </Text>
+              </CollapsBlock>
             </li>
           </ul>
         </InfoCard>

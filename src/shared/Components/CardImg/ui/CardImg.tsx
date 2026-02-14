@@ -7,7 +7,7 @@ export const CardImg = ({
 }: {
   bgImg: string;
   title: string;
-  position?: number ;
+  position?: number;
 }) => {
   return (
     <div

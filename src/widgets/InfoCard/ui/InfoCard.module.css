@@ -8,10 +8,10 @@
   width: 100%;
 }
 
-@media (max-width:1216px) { 
-  .card { 
+@media (max-width: 1216px) {
+  .card {
     padding: 15px;
-} 
+  }
 }
 
 .cardWrapper {
