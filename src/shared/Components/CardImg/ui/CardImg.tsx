@@ -4,13 +4,16 @@ export const CardImg = ({
   bgImg,
   title,
   position,
+  onClick,
 }: {
   bgImg: string;
   title: string;
   position?: number;
+  onClick?: () => void;
 }) => {
   return (
     <div
+    onClick={onClick}
       style={{
         backgroundImage: bgImg ? `url(${bgImg})` : undefined,
         backgroundSize: "cover",
@@ -24,6 +27,7 @@ export const CardImg = ({
         flexDirection: "column-reverse",
         backgroundBlendMode: "darken",
         backgroundColor: "rgba(0, 0, 0, 0.2)",
+        cursor: "pointer",
       }}
     >
       <Text variant="h3">{title}</Text>
