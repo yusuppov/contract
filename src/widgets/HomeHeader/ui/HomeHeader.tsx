@@ -6,6 +6,7 @@ import styles from "./HomeHeader.module.css";
 import SoldatImg from "../../../shared/assets/img/soldat.png";
 import { Button } from "../../../shared/Components/Button";
 import { Card } from "../../../shared/Components/Card/ui";
+import { DropDown } from "../../../shared/Components/DropDown";
 
 export const HomeHeader = () => {
   const handleScroll = (k: number) => {
@@ -16,6 +17,68 @@ export const HomeHeader = () => {
   };
   return (
     <div className={styles.homeHeaderWrapper}>
+      <DropDown>
+        {(close) => (
+          <div className={styles.dropDownWrapper}>
+            <ul className={styles.dropDownUl}>
+              <li>
+                <Text
+                  variant="body2"
+                  color="blue"
+                  onClick={() => {handleScroll(0); close()}}
+                >
+                  Как заключить контракт
+                </Text>
+              </li>
+              <li>
+                <Text
+                  variant="body2"
+                  color="blue"
+                  onClick={() => {handleScroll(1); close()}}
+                >
+                  Денежные выплаты
+                </Text>
+              </li>
+              <li>
+                <Text
+                  variant="body2"
+                  color="blue"
+                  onClick={() => {handleScroll(2); close()}}
+                >
+                  Льготы и гарантии
+                </Text>
+              </li>
+              <li>
+                <Text
+                  variant="body2"
+                  color="blue"
+                  onClick={() => {handleScroll(4); close()}}
+                >
+                  Специальности
+                </Text>
+              </li>
+              <li>
+                <Text
+                  variant="body2"
+                  color="blue"
+                  onClick={() => {handleScroll(5); close()}}
+                >
+                  Условия контракта
+                </Text>
+              </li>
+              <li>
+                <Text
+                  variant="body2"
+                  color="blue"
+                  onClick={() => {handleScroll(3); close()}}
+                >
+                  Частые вопросы
+                </Text>
+              </li>
+            </ul>
+          </div>
+        )}
+      </DropDown>
       <ContainerFlex>
         <div className={styles.leftContainer}>
           <Text as="h1" variant="h1">

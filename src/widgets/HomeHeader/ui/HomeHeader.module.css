@@ -41,3 +41,17 @@
     flex-direction: column;
   }
 }
+
+.dropDownUl { 
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.dropDownWrapper { 
+  border-top: 1px solid #E1E1E1;
+  padding: 14px 0 0 16px;
+  margin-top: 5px;
+  width: 100%;
+}
