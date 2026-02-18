@@ -1,6 +1,8 @@
+import clsx from "clsx";
 import styles from "./DropDown.module.css";
 import { useState } from "react";
-import clsx from "clsx";
+
+import { Button } from "../../Button";
 
 export const DropDown = ({
   children,
@@ -13,8 +15,7 @@ export const DropDown = ({
   };
   return (
     <div className={styles.dropDown}>
-      <div className={styles.dropLinesWrapper}>
-        {" "}
+      <div className={styles.dropDownBox}>
         <ul
           className={styles.dropDownWrapper}
           onClick={() => setActive(!active)}
@@ -29,10 +30,18 @@ export const DropDown = ({
             className={clsx(styles.threeLine, active ? styles.activeLine3 : "")}
           ></li>
         </ul>
+        <Button text="Записаться сейчас" color="mute" variant="h5"></Button>
       </div>
 
-      <div className={clsx(styles.dropDownBlock, active ? styles.active : "")}>
-        {children(close)}
+      <div
+        className={clsx(styles.dropLinesWrapper, active ? styles.active : "")}
+      >
+        {" "}
+        <div
+          className={clsx(styles.dropDownBlock, active ? styles.active : "")}
+        >
+          {children(close)}
+        </div>
       </div>
     </div>
   );

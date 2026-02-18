@@ -128,7 +128,7 @@
 }
 
 .mute {
-  color: hsl(from var(--c-black) h s l / 35%);
+  color:#808080;
 }
 
 .fw400 {
