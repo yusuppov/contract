@@ -16,7 +16,7 @@ import { CollapsBlock } from "../../CollapsBlock";
 
 export const HomeBackpack = () => {
   return (
-    <div className={styles.backpackWrapper}>
+    <div className={styles.backpackWrapper} id="backpack">
       <div className={styles.backpackImg}>
         <Text variant="h2">Социальные льготы и гарантии</Text>
       </div>

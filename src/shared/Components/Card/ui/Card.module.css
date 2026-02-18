@@ -7,6 +7,10 @@
   padding: 12px;
 }
 
+.card:hover { 
+  cursor: pointer;
+}
+
 @media (max-width: 1216px) {
   .card {
     flex-direction: row;
