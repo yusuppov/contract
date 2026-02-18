@@ -23,54 +23,72 @@ export const HomeHeader = () => {
             <ul className={styles.dropDownUl}>
               <li>
                 <Text
-                  variant="body2"
-                  color="blue"
-                  onClick={() => {handleScroll(0); close()}}
+                  variant="caption3"
+                  color="white"
+                  onClick={() => {
+                    handleScroll(0);
+                    close();
+                  }}
                 >
                   Как заключить контракт
                 </Text>
               </li>
               <li>
                 <Text
-                  variant="body2"
-                  color="blue"
-                  onClick={() => {handleScroll(1); close()}}
+                  variant="caption3"
+                  color="white"
+                  onClick={() => {
+                    handleScroll(1);
+                    close();
+                  }}
                 >
                   Денежные выплаты
                 </Text>
               </li>
               <li>
                 <Text
-                  variant="body2"
-                  color="blue"
-                  onClick={() => {handleScroll(2); close()}}
+                  variant="caption3"
+                  color="white"
+                  onClick={() => {
+                    handleScroll(2);
+                    close();
+                  }}
                 >
                   Льготы и гарантии
                 </Text>
               </li>
               <li>
                 <Text
-                  variant="body2"
-                  color="blue"
-                  onClick={() => {handleScroll(4); close()}}
+                  variant="caption3"
+                  color="white"
+                  onClick={() => {
+                    handleScroll(4);
+                    close();
+                  }}
                 >
                   Специальности
                 </Text>
               </li>
               <li>
                 <Text
-                  variant="body2"
-                  color="blue"
-                  onClick={() => {handleScroll(5); close()}}
+                  variant="caption3"
+                  color="white"
+                  onClick={() => {
+                    handleScroll(5);
+                    close();
+                  }}
                 >
                   Условия контракта
                 </Text>
               </li>
               <li>
                 <Text
-                  variant="body2"
-                  color="blue"
-                  onClick={() => {handleScroll(3); close()}}
+                  variant="caption3"
+                  color="white"
+                  onClick={() => {
+                    handleScroll(3);
+                    close();
+                  }}
                 >
                   Частые вопросы
                 </Text>

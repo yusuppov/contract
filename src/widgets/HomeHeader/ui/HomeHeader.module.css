@@ -45,13 +45,27 @@
 .dropDownUl { 
   list-style: none;
   display: flex;
-  gap: 15px;
   flex-direction: column;
+  padding: 0 25px 0 25px;
+}
+
+.dropDownUl li { 
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 10px 0;
+}
+
+.dropDownUl li:first-child { 
+  border-top: none;
+}
+
+.dropDownUl li:last-child { 
+  border-bottom: none;
 }
 
 .dropDownWrapper { 
-  border-top: 1px solid #E1E1E1;
-  padding: 14px 0 0 16px;
-  margin-top: 5px;
+  text-align: end;
+  padding: 14px 0 0 0;
+  margin-top: 40px;
   width: 100%;
 }
